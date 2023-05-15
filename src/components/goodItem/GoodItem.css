@@ -1,0 +1,46 @@
+.good-item {
+  flex: 0 1 300px;
+}
+.card {
+  display: flex;
+  flex-direction: column;   
+  margin: 0;
+}
+.card img {
+  background-color: #e7e7e7;
+}
+.card .card-content {
+  flex: 0 1 190px;
+  padding: 10px;
+  max-height: 140px;
+  overflow-y: auto;
+}
+.card-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card .price {
+  font-size: 1.5rem; 
+  font-weight: 700;
+}
+.item-tooltip {
+  position: absolute;
+  border: 1px solid rgb(137, 137, 137);
+  background-color: #1565c024;
+  padding: 10px;
+  border-radius: 5px;
+  top: -35px;
+  animation: fade-in 300ms ease-in-out;  
+}
+
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translate(2rem, 2rem);
+  } to {
+    opacity: 1;
+    transform: translateY(0, 0); 
+  }
+}

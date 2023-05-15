@@ -1,0 +1,138 @@
+.basketItem-container {
+  display: flex;
+  padding: 1rem 2.5rem;
+  gap: 1.5rem;
+  justify-content: stretch;
+  align-items: flex-start;
+  transition: background-color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out;
+  -ms-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+}
+.basketItem-container:hover {
+  background-color: #0ba27430;
+  transition: background-color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out;
+  -ms-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+}
+.basketItem-img {
+  max-width: 60px;
+  height: auto;
+  flex: 0 0 20%;
+  background-color: #f3f3f3;
+}
+.item-info {
+  flex: 1 1 60%;
+}
+.item-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  overflow: auto;
+}
+.item-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+}
+.itemCount-handle {
+  flex: 0 0 20%;
+  justify-self: flex-end;
+}
+.itemCount-handler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.itemCount-handler button {
+  background-color: #f7f7f7;
+  border: 1px solid #acacac;
+  border-radius: 3px;
+  padding: 2px;
+}
+.item-price {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.item-quantity {
+  margin: 0 5px;
+  width: 1.2rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.basket-totalInfo {
+  padding: 2rem 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.basket-totalInfo span {
+  padding: 5px;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: tomato;
+}
+.itemHandler {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.deleteItem-btn {
+  background-color: #fff9f8;
+  border: 1px solid #ea8e7e;
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+.deleteItem-btn:hover {
+  background-color: rgb(255, 158, 141);
+  border: 1px solid tomato;
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+.deleteItem-btn:focus {
+  background-color: tomato;
+  border: 1px solid tomato;
+  transition: background-color 0.3s ease-in-out;
+}
+.count-handler {
+  transition: background-color 0.3s ease-in-out;
+}
+.count-handler:hover {
+  background-color: #e4e3e3;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+.count-handler:active {
+  background-color: #bdbdbd;
+  transition: background-color 0.3s ease-in-out;
+}
+.confirm-btn {
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+@media (max-width: 480px) {
+  .basketItem-container {
+    padding: 0.5rem !important;
+    gap: 1rem !important;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .itemCount-handler {
+    gap: 0.2rem !important;
+  }
+  .item-info {
+    flex: 0 1 49%;
+  }
+}

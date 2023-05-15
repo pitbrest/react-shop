@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Comfortaa', cursive;
+  user-select: none;
+}
+main {
+  min-height: calc(100vh - 114px);
+}
+nav{
+  padding: 0 1rem;
+}
+nav .brand-logo {
+  left: 0;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+.page-footer {
+  margin: 0;
+  padding: 0;
+}
